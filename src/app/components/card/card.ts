@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -6,4 +6,14 @@ import { Component } from '@angular/core';
   templateUrl: './card.html',
   styleUrl: './card.css',
 })
-export class Card {}
+export class Card {
+  title = input.required<string>();
+  
+  price = input.required<number>();
+  
+  image = input.required<string>();
+  
+  hoverImage = input.required<string>();
+  
+  link = input.required<string>();
+}

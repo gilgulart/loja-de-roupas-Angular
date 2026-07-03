@@ -2,23 +2,23 @@
                 
                 <div class="imageContainer">
                   
-                  <a href="roupa2.html">
+                  <a [href]="link()">
                   <img
-                  src="/cortavento.jpeg"
-                  alt="cortavento DEWY 250 reais"
+                  [src]="image()"
+                  [alt]="title()"
                   class="imgDefault"
                   />
                   
                   <img
-                  src="/cortaventoHover.jpeg"
-                  alt="Pedro Vasco vestindo cortavento DEWY"
+                  [src]="hoverImage()"
+                  [alt]="title()"
                   class="imgHover"
                   />
                   </a>
                   
                 </div>
                 
-                <h2>Corta-vento D E W Y</h2>
-                <p>R$ 250</p>
+                <h2>{{title()}}</h2>
+                <p>R$ {{price()}}</p>
                 
               </div>

@@ -2,7 +2,8 @@
     background-color: #ffffff;
     color: var(--bg-color);
 
-    width: 45vw;
+    max-width: 350px;
+    width: 100%;
     padding-bottom: .5rem;
 
     overflow: hidden;
@@ -56,4 +57,7 @@
 .card:hover .imgHover{
     opacity: 1;
 }
- 
+
+:host {
+    display: block;
+}

@@ -1,98 +1,20 @@
-main {
-    gap: 2rem;
-
-    width: 40%;
-    margin: 4rem auto;
-
-    justify-items: center;
-    align-items: center;
-    margin: 2rem auto;
-}
-
 .card-container {
+    margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
     gap: 1rem;
 }
 
-.background-main {
-    position: fixed;
-
-    inset: 0;
-
-    z-index: -1;
-
-    cursor: pointer;
 
 
-    pointer-events: none;
-
-
-    background:
-        radial-gradient(circle at 20% 20%,
-            rgba(128, 0, 255, 0.25),
-            transparent 30%),
-
-        radial-gradient(circle at 80% 30%,
-            rgba(255, 0, 128, 0.18),
-            transparent 35%),
-
-        radial-gradient(circle at 50% 80%,
-            rgba(0, 180, 255, 0.15),
-            transparent 40%),
-
-        radial-gradient(circle at 70% 70%,
-            rgba(255, 180, 0, 0.08),
-            transparent 30%),
-        radial-gradient(circle at 70% 70%,
-            rgba(255, 170, 0, 0.12),
-            transparent 35%),
-
-        radial-gradient(circle at 30% 70%,
-            rgba(145, 255, 0, 0.08),
-            transparent 30%),
-        #050505;
-
-    background-size: 300% 300%;
-    mix-blend-mode: screen;
-
-
-    animation: bgMove 25s ease-in-out infinite alternate;
+:host {
+    display: block;
 }
 
-
-@keyframes bgMove {
-
-    0% {
-        background-position:
-            0% 0%;
+@media (min-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
     }
-
-    50% {
-        background-position:
-            100% 50%;
-    }
-
-    100% {
-        background-position:
-            0% 100%;
-    }
-
-}
-
-.background-main::after {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background-image: url(/100-100-30.png);
-
-    opacity: 0.9;
-
-    mix-blend-mode: overlay;
-
-    pointer-events: none;
 }
