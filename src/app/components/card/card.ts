@@ -1,19 +1,13 @@
 import { Component, input } from '@angular/core';
+import { RouterLink } from "@angular/router";
+import { Product} from '../../services/product';
 
 @Component({
   selector: 'app-card',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './card.html',
   styleUrl: './card.css',
 })
 export class Card {
-  title = input.required<string>();
-  
-  price = input.required<number>();
-  
-  image = input.required<string>();
-  
-  hoverImage = input.required<string>();
-  
-  link = input.required<string>();
+  product = input.required<Product>();
 }

@@ -2,23 +2,23 @@
                 
                 <div class="imageContainer">
                   
-                  <a [href]="link()">
+                  <a routerLink= "product-page" >
                   <img
-                  [src]="image()"
-                  [alt]="title()"
+                  [src]="product().image"
+                  [alt]="product().title"
                   class="imgDefault"
                   />
                   
                   <img
-                  [src]="hoverImage()"
-                  [alt]="title()"
+                  [src]="product().hoverImage"
+                  [alt]="product().title"
                   class="imgHover"
                   />
                   </a>
                   
                 </div>
                 
-                <h2>{{title()}}</h2>
-                <p>R$ {{price()}}</p>
+                <h2>{{product().title}}</h2>
+                <p>R$ {{product().price}}</p>
                 
               </div>
