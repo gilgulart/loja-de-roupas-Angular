@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { RouterLink } from "@angular/router";
 
 @Component({
@@ -7,4 +7,7 @@ import { RouterLink } from "@angular/router";
   templateUrl: './banner.html',
   styleUrl: './banner.css',
 })
-export class Banner {}
+export class Banner {
+  bannerImg = input.required<string>();
+  showContent = input(true);
+}

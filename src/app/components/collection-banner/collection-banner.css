@@ -1,0 +1,143 @@
+.collection {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 2fr 1fr 0.5fr;
+    gap: 0;
+    height: 20vh;
+    width: 100%;
+    margin-bottom: 2.5vh;
+}
+
+.image {
+    overflow: hidden;
+    position: relative;
+    border: #000000 solid 5px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.image--far-right:hover,
+.image--right:hover,
+.image--left:hover,
+.image--far-left:hover {
+    z-index: 100;
+    transform: scale(1.15);
+    transition: transform 0.4s ease, z-index 0s;
+}
+
+.image--far-right:hover img,
+.image--right:hover img,
+.image--left:hover img,
+.image--far-left:hover img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 80vh;
+    object-fit: cover;
+    z-index: 1000;
+}
+
+.image--center {
+    z-index: 3;
+    transform: scale(1.05);
+}
+
+.image--left {
+    z-index: 2;
+    transform: scale(0.90);
+    width: 40%;
+    left: 65%
+}
+
+.image--right {
+    z-index: 2;
+    transform: scale(0.90);
+    width: 40%;
+}
+
+.image--far-left {
+    z-index: 1;
+    transform: scale(0.75);
+    left: 160%;
+}
+
+.image--far-right {
+    z-index: 1;
+    transform: scale(0.75);
+    right: 157%;
+}
+
+@media (max-width: 768px) {
+    html {
+        overflow-x: hidden;
+    }
+
+    .collection {
+        position: relative;
+        display: block;
+        gap: 0;
+        height: 30vh;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+
+    }
+
+    .image {
+        overflow: hidden;
+        position: absolute;
+        height: 100%;
+        border: #000000 solid 5px;
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.4s ease;
+    }
+
+    .image--center {
+        z-index: 5;
+        transform: scale(1.05);
+        width: 30%;
+        left: -5%;
+    }
+
+    .image--left {
+        z-index: 4;
+        transform: scale(0.95);
+        width: 30%;
+        left: 20%;
+    }
+
+    .image--right {
+        z-index: 3;
+        transform: scale(0.85);
+        width: 30%;
+        left: 40%;
+    }
+
+    .image--far-left {
+        z-index: 2;
+        transform: scale(0.75);
+        width: 30%;
+        left: 60%;
+    }
+
+    .image--far-right {
+        z-index: 1;
+        transform: scale(0.65);
+        width: 30%;
+        left: 75%;
+    }
+
+}

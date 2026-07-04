@@ -1,0 +1,14 @@
+<header>
+  <app-header></app-header>
+</header>
+
+<aside>
+  <div class="hero-collection">
+    <app-banner [bannerImg]="'/bannerColecao.png'" [showContent]="false"> </app-banner>
+  </div>
+</aside>
+
+  @for (collection of collections; track collection.center) {
+    <app-collection-banner [collection]="collection"> </app-collection-banner>
+  }
+<app-footer></app-footer>
