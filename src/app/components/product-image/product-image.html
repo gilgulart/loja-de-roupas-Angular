@@ -1,0 +1,22 @@
+<section class="productPage">
+  <div class="productImage">
+    <img [src]="product().image" [alt]="product().title" class="imgDefault" />
+
+    <img [src]="product().hoverImage" [alt]="product().title" class="imgHover" />
+  </div>
+  
+  <div class="productInfo">
+      <h1 >{{product().title}}</h1>
+      
+      <p class="price">R$ {{product().price}} </p>
+      
+      <p class="description" >
+          {{product().description}}
+        </p>
+
+        <app-form></app-form>
+    
+    </div>
+    
+
+</section>

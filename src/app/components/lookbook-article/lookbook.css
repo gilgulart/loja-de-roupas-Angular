@@ -1,0 +1,90 @@
+h1, h2, p{
+  color: black;
+}
+
+.lookbook {
+  background-color: #ffff;
+  padding: 4rem 2rem;
+}
+
+.lookbook {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.lookbook__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 6rem;
+  align-items: center;
+}
+
+/*
+  ITEM INVERTIDO: apenas inverte a ordem visual das colunas.
+  No HTML a ordem do código continua a mesma (texto antes da imagem),
+  mas visualmente a imagem aparece à esquerda.
+  
+  Isso é importante para acessibilidade: leitores de tela
+  ainda leem na ordem lógica do HTML, independente da ordem visual.
+*/
+.lookbook__item--reverse {
+  direction: rtl; /* Inverte a direção do fluxo das colunas */
+}
+
+/*
+  Reseta a direção dentro dos filhos para o texto não ficar invertido.
+  Sem isso, o texto dentro também seria lido da direita para a esquerda.
+*/
+.lookbook__item--reverse .lookbook__text,
+.lookbook__item--reverse .lookbook__figure {
+  direction: ltr;
+}
+
+.lookbook__figure {
+  margin: 0;
+}
+
+.lookbook__figure img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block; 
+}
+.lookbook__text {
+  padding: 1rem;
+}
+
+.lookbook__text h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+.lookbook__text p {
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .lookbook__item {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  /*
+    No mobile, o --reverse não faz mais sentido visualmente.
+    Resetamos a direção para que tudo flua normalmente.
+  */
+  .lookbook__item--reverse {
+    direction: ltr;
+  }
+
+  .lookbook__figure img {
+    height: 350px;
+  }
+
+  .lookbook__text{
+    text-align: center;
+  }
+}

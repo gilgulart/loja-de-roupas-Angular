@@ -1,0 +1,32 @@
+.about {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffff;
+    color: var(--bg-color);
+}
+
+.about p {
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.about p a {
+    text-transform: capitalize;
+    color: var(--primary-color);
+}
+
+.about h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.container-background {
+    color: var(--text);
+    font-size: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-top: 50vh;
+}

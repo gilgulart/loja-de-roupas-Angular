@@ -20,7 +20,7 @@ export class ProductService {
       price: 150,
       image: "/camisa.jpeg",
       hoverImage: "/camisaHover.jpeg",
-      description: "Descrição da camisa"
+      description: "    Camisa D E W Y, feita com tecido de alta qualidade e design moderno. Perfeita para quem busca estilo e conforto em uma única peça. Disponível em diversas cores e tamanhos."
     },
     
     {
@@ -29,7 +29,7 @@ export class ProductService {
       price: 250,
       image: "/cortavento.jpeg",
       hoverImage: "/cortaventoHover.jpeg",
-      description: "Descrição da camisa"
+      description: "O corta-vento DEWY une resistência, conforto e estilo urbano. Produzido com material leve e durável, oferece proteção contra o vento com um caimento moderno e acabamento premium. Feito para quem busca presença e qualidade no dia a dia."
     },
     
     {
@@ -38,7 +38,7 @@ export class ProductService {
       price: 150,
       image: "/blackTshirt.jpeg",
       hoverImage: "/blackTshirtModel.png",
-      description: "Descrição da camisa"
+      description: " Camisa D E W Y, feita com tecido de alta qualidade e design moderno. Perfeita para quem busca estilo e conforto em uma única peça. Disponível em diversas cores e tamanhos."
     },
 
     {
@@ -47,7 +47,7 @@ export class ProductService {
       price: 150,
       image: "/DewyRed.jpeg",
       hoverImage: "/redModelo.png",
-      description: "Descrição da camisa"
+      description: "Camisa D E W Y, feita com tecido de alta qualidade e design moderno. Perfeita para quem busca estilo e conforto em uma única peça. Disponível em diversas cores e tamanhos."
     },
     
     {
@@ -56,7 +56,7 @@ export class ProductService {
       price: 100,
       image: "/bone.jpeg",
       hoverImage: "/boneModelo.jpeg",
-      description: "Descrição da camisa"
+      description: " O boné DEWY foi desenvolvido com materiais de alta qualidade e acabamento impecável, proporcionando conforto, durabilidade e ajuste perfeito. Seu design clean com bordado premium destaca a identidade da marca de forma moderna e autêntica. Uma peça essencial para complementar qualquer visual com atitude e sofisticação."
     },
 
     {
@@ -65,7 +65,7 @@ export class ProductService {
       price: 100,
       image: "/calça.jpg",
       hoverImage: "/modelocalça.jpeg",
-      description: "Descrição da camisa"
+      description: "  Calça D E W Y, feita com tecido de alta qualidade e design moderno. Perfeita para quem busca estilo e conforto em uma única peça. Disponível em diversas cores e tamanhos."
     },
     
     
@@ -75,7 +75,7 @@ export class ProductService {
       price: 130,
       image: "/bermuda.jpeg",
       hoverImage: "/modeloberma.jpeg",
-      description: "Descrição da camisa"
+      description: "   Bermuda D E W Y, feita com tecido de alta qualidade e design moderno. Perfeita para quem busca estilo e conforto em uma única peça. Disponível em diversas cores e tamanhos."
     },
     
     {
@@ -84,7 +84,7 @@ export class ProductService {
       price: 100,
       image: "/moletom.jpeg",
       hoverImage: "/modelomoletom.png",
-      description: "Descrição da camisa"
+      description: " Moletom D E W Y, feita com tecido de alta qualidade e design moderno. Perfeita para quem busca estilo e conforto em uma única peça. Disponível em diversas cores e tamanhos."
     },
     
 

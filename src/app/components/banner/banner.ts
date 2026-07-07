@@ -10,4 +10,5 @@ import { RouterLink } from "@angular/router";
 export class Banner {
   bannerImg = input.required<string>();
   showContent = input(true);
+  title = input("Title")
 }
